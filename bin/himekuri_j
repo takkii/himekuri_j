@@ -8,4 +8,4 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'himekuri_j'
 
-puts HimekuriJBasic.before
+HimekuriJBasic.before
