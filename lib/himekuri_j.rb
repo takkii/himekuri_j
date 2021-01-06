@@ -12,7 +12,7 @@ class HimekuriJBasic
     ruby_version = (RUBY_VERSION).to_s
     version = (HimekuriJ::VERSION).to_s
     himekuri_j = "himekuri_j-".to_s + version.to_s
-    java_path= $JAVA_HOME/bin/java
+    java_path= ($JAVA_HOME/bin/java).to_s
     
     javalang_path = javapath + " " + "run" + " "+  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/" + ruby_version + "/gems/" + himekuri_go + "/lib/HimekuriJ.class".to_s
     stdout_go, stderr_go, status_go = Open3.capture3(javalang_path)
