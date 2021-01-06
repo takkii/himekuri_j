@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{日めくりJavaです、呼び出すと現在時刻表示します。}
   spec.description   = %q{Javaのクラスを呼び、現在時刻表示します}
   spec.license       = "MIT"
-  spec.executables   = %w(himekuri_go)
+  spec.executables   = %w(himekuri_j)
   spec.homepage      = "http://rubyist.hatenablog.com"
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
