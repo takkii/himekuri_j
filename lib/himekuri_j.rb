@@ -7,9 +7,15 @@ require "himekuri_j/version"
 
 class HimekuriJBasic
   def self.before
+  
+    ruby_version = (RUBY_VERSION).to_s
+    version = (HimekuriJ::VERSION).to_s
+    himekuri_j = "himekuri_j-".to_s + version.to_s
+    
+    java_path = "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/" + ruby_vesion + "/gems/" + himekuri_j + "/lib/himekurij".to_s
     
     begin
-    system('java HimekuriJ')
+    system('java' + ' ' + java_path)
     
     rescue Exception => e
     puts e.backtrace
