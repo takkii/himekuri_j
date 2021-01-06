@@ -2,13 +2,13 @@
 
 class HimekuriJBasic
   def self.before
-	begin
-	exec 'java HimekuriJ'
-	rescue Exception => e
-	e.printbacktrace
-	ensure
-	GC.stat
-	end
+    begin
+      exec 'java HimekuriJ'
+    rescue Exception => e
+      e.printbacktrace
+    ensure
+      GC.stat
+    end
   end
 end
 
