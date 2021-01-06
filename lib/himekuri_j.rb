@@ -12,7 +12,7 @@ class HimekuriJBasic
     version = (HimekuriJ::VERSION).to_s
     himekuri_j = "himekuri_j-".to_s + version.to_s
     
-    java_path = "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/" + ruby_vesion + "/gems/" + himekuri_j + "/lib/himekurij".to_s
+    java_path = "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/" + ruby_version + "/gems/" + himekuri_j + "/lib/himekurij".to_s
     
     begin
     system('java' + ' ' + java_path)
