@@ -14,9 +14,9 @@ class HimekuriJBasic
     himekuri_j = "himekuri_j-".to_s + version.to_s
     java_path= ($JAVA_HOME/bin/java).to_s
     
-    javalang_path = javapath + " " + "run" + " "+  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/" + ruby_version + "/gems/" + himekuri_go + "/lib/HimekuriJ.class".to_s
-    stdout_go, stderr_go, status_go = Open3.capture3(javalang_path)
+    javalang_path = java_path + " " + "run" + " "+  "$HOME/.rbenv/versions/" + ruby_version + "/lib/ruby/gems/" + ruby_version + "/gems/" + himekuri_j + "/lib/HimekuriJ.class".to_s
+    stdout_java, stderr_java, status_java = Open3.capture3(javalang_path)
     
-    stdout_go
+    stdout_java
   end
 end
